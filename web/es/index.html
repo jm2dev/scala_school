@@ -1,0 +1,68 @@
+---
+layout: default
+title: Scala School
+---
+
+      <div class="hero-unit">
+        <h1>Escuela de Scala!</h1>
+        <p>De &empty; a un servicio distribuido</p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span8">
+          <p><b>Otros idiomas:</b> <a href="../ru/index.html">Русский</a> - <a href="../index.html">English</a></p>
+
+          <h2>Introducción</h2>
+          <p>Escuela de Scala comenzó como una serie de presentaciones en
+          Twitter para preparar a ingenieros expertos en programadores de <a href="http://www.scala-lang.org/">Scala</a>
+          productivos. Scala es relativamente un lenguaje nuevo, que hace uso
+          de conceptos familiares. Así, estas presentaciones asumieron que la
+          audiencia estaba familiarizada con esos conceptos y mostramos cómo
+          usarlos en Scala. Encontramos que es una forma muy efectiva para que
+          los nuevos ingenieros cojan velocidad pronto. Este es el material por
+          escrito que acompañó dichas presentaciones. Creemos que es útil en si
+          mismo.</p>
+
+          <h2>Enfoque</h2>
+          <p>Pesamos que la mejor forma de enseñar Scala no es como una
+          versión mejorada de Java sino como un nuevo lenguaje. No se asume
+          experiencia previa en Java. Nos centraremos en el intérprete y el
+          estilo objeto-funcional así como el estilo de programación que
+          hacemos aquí. Pondremos especial interés en mantenibilidad, claridad
+            en la expresión y el sistema tipado.</p>
+          <p>Muchas de las lecciones no requieren más software que el
+          intérprete de Scala, REPL. Animamos al lector a seguir, pero también
+          a ir más allá! Use las lecciones como el punto de partida para
+            explorar el lenguaje.</p>
+
+          <h2>También</h2>
+          <p>Puedes aprender más en:
+          <ul>
+          <li><strong><a href="http://twitter.github.com/effectivescala/">Effective
+          Scala</a></strong> "Buenas prácticas" de Twitter para Scala. Útil
+          para entender algunos de los usos en el código de Twitter.</li>
+          <li><strong><a href="http://docs.scala-lang.org">scala-lang.org
+          Documentation</a></strong> Enlaces a tutoriales, manuales,
+          documentación de la API, libros, ...</li>
+          <li><strong><a href="http://www.scala-lang.org/api/">Scala API Documentation</a></strong></li>
+          </ul>
+
+        </div>
+        <div class="span6">
+          <h2>Lecciones</h2>
+            <dl>
+              {% for lesson in site.lessons %}
+                <dt><a href="{{ lesson.url }}">{{ lesson.title }}</a></dt>
+                <dd>{{ lesson.desc }}</dd>
+              {% endfor %}
+            </dl>
+       </div>
+      </div>
+    </div> <!-- /container -->
+
+    <!-- banner -->
+    <a href="https://github.com/twitter/scala_school"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+  </body>
+</html>
