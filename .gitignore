@@ -7,3 +7,5 @@ searchbird/*.log
 searchbird/*.lock
 lib_managed/
 target/
+# emacs backup files
+*~
